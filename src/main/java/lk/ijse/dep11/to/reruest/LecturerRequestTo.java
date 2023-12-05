@@ -25,7 +25,7 @@ public class LecturerRequestTo {
     @Length(min = 2 , message = "Invalid qualifications: {value}")
     private String qualifications;
     @NotBlank(message = "Type can't be em[ty")
-    @Pattern(regexp = "^(full-time| part-time)$", flags = Pattern.Flag.CASE_INSENSITIVE, message = "Invalid type")
+    @Pattern(regexp = "^(full-time|part-time)$", flags = Pattern.Flag.CASE_INSENSITIVE, message = "Invalid type")
     private  String type;
     @LecturerImage
     private MultipartFile picture;
